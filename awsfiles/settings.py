@@ -136,7 +136,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # S3 Bucket
 AWS_QUERYSTRING_AUTH = False
 
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+DEFAULT_FILE_STORAGE = 'photos.custom_storage.MediaStorage'
 
 AWS_ACCESS_KEY_ID = 'AKIAVZ5Q5BA2UNIL4KOU'
 AWS_SECRET_ACCESS_KEY = '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'
